@@ -1,0 +1,28 @@
+/* ANCHOR: TEXT EDITOR
+-------------------------------------------- */
+
+.elementor {
+
+	.elementor-widget-wrap {
+
+		.elementor-widget {
+
+			.elementor-text-editor p:last-of-type {
+				margin-bottom: 0;
+			}
+
+			.elementor-text-editor strong {
+				color: inherit;
+
+				.vlt-is--dark-scheme & {
+					color: map-get($colors, 'c0');
+				}
+
+			}
+
+		}
+
+	}
+
+}
+

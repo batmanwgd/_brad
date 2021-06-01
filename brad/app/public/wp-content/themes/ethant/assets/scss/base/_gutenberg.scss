@@ -1,0 +1,62 @@
+/* GUTENBERG
+-------------------------------------------- */
+
+ul[class^='wp-block'] {
+	padding-left: 0 !important;
+}
+
+.wp-block-button {
+	margin-bottom: px2rem(15px);
+}
+
+// fluid video
+.fluid-width-video-wrapper {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.wp-block-cover {
+	color: map-get($colors, 'c0');
+}
+
+.vlt-content-markup {
+
+	.alignleft {
+		float: left;
+		margin-right: 30px;
+	}
+
+	.alignright {
+		float: right;
+		margin-left: 30px;
+	}
+
+	.alignfull {
+		width: auto;
+		margin-left: calc( -100vw / 2 + 100% / 2 );
+		margin-right: calc( -100vw / 2 + 100% / 2 );
+		max-width: 100vw;
+	}
+
+	.alignwide {
+		width: auto;
+
+		@include mq('medium', 'min') {
+			margin-left: calc(-25% - 7.5px);
+			margin-right: calc(-25% - 7.5px);
+			max-width: 1200px;
+		}
+
+	}
+
+}
+
+.blocks-gallery-caption,
+.wp-block-embed figcaption,
+.wp-block-image figcaption {
+	margin-bottom: px2rem(15px);
+	width: 100%;
+}

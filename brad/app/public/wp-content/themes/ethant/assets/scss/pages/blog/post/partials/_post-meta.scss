@@ -1,0 +1,20 @@
+/* ANCHOR: POST META
+-------------------------------------------- */
+
+.vlt-post-meta {
+	font-weight: 600;
+	font-size: px2rem(map-get($scales, 's10'));
+	color: map-get($colors, 'c23');
+	text-transform: uppercase;
+
+	.vlt-is--dark-scheme & {
+		color: map-get($colors, 'c11');
+	}
+
+	span + span::before {
+		content: '-';
+		margin-left: px2rem(8px);
+		margin-right: px2rem(10px);
+	}
+
+}

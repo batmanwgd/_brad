@@ -1,0 +1,36 @@
+@keyframes vlt_bounce {
+	0%,
+	100% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(1);
+	}
+}
+
+@keyframes vlt_spin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes vlt_burger_hover {
+	0%,
+	100% {
+		width: 100%;
+	}
+	50% {
+		width: 50%;
+	}
+}
+
+@keyframes vlt_fade_in_up_sm {
+	from {
+		opacity: 0;
+		transform: translate3d(0, 160px, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}

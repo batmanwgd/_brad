@@ -1,0 +1,44 @@
+/* ANCHOR: DEFAULT POST
+-------------------------------------------- */
+
+.vlt-post--style-default {
+	padding-bottom: 40px;
+
+	& + .vlt-post--style-default {
+		margin-top: px2rem(70px);
+	}
+
+	.vlt-post-thumbnail + .vlt-post-content {
+		padding-top: px2rem(45px);
+	}
+
+	.vlt-post-content {
+		text-align: center;
+
+		.vlt-post-header {
+
+			.vlt-post-meta {
+				margin-bottom: px2rem(15px);
+			}
+
+			.vlt-post-title {
+				font-size: px2rem(map-get($scales, 's3'));
+			}
+
+		}
+
+		.vlt-post-excerpt {
+			max-width: px2rem(550px);
+			margin-top: px2rem(40px);
+			margin-left: auto;
+			margin-right: auto;
+
+			&:empty {
+				display: none;
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,71 @@
+/* ANCHOR: TESTIMONIAL SLIDER
+-------------------------------------------- */
+
+.vlt-testimonial {
+	display: block;
+
+	.owl-dots {
+		text-align: left;
+		margin-top: px2rem(75px);
+
+		@include mq('medium') {
+			margin-top: px2rem(50px);
+		}
+
+	}
+
+	&-item {
+
+		&__author {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			margin-top: px2rem(52px);
+
+			.avatar {
+				flex-shrink: 0;
+				margin-right: px2rem(16px);
+
+				img {
+					max-width: px2rem(55px);
+					border-radius: px2rem(55px);
+				}
+
+			}
+
+			.metas {
+				flex-basis: 100%;
+			}
+
+		}
+
+		&__title {
+			margin: 0 0 px2rem(3px);
+			font-size: px2rem(map-get($scales, 's9'));
+		}
+
+		&__description {
+			font-size: px2rem(map-get($scales, 's10'));
+			color: map-get($colors, 'c3');
+
+			.vlt-is--dark-scheme & {
+				color: map-get($colors, 'c11');
+			}
+
+		}
+
+		&__text {
+			color: map-get($colors, 'c3');
+			font-size: px2rem(map-get($scales, 's9'));
+			letter-spacing: -.01em;
+			line-height: 1.625;
+
+			.vlt-is--dark-scheme & {
+				color: map-get($colors, 'c11');
+			}
+
+		}
+
+	}
+
+}

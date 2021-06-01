@@ -1,0 +1,44 @@
+/* ANCHOR: BLOG
+-------------------------------------------- */
+
+// filters
+.vlt-blog-posts__filters {
+	margin-bottom: px2rem(100px);
+	text-align: center;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		> li {
+			display: inline-flex;
+			margin: 0 px2rem(15px);
+			font-weight: 700;
+			color: map-get($colors, 'cc');
+			text-transform: uppercase;
+			cursor: pointer;
+			transition: color 300ms ease-in-out;
+
+			&.active,
+			&:hover {
+				color: map-get($colors, 'p1');
+			}
+
+		}
+
+	}
+
+}
+
+// import
+
+@import
+	'blog/post/partials/post-thumbnail',
+	'blog/post/partials/post-title',
+	'blog/post/partials/post-meta';
+
+@import
+	'blog/post/default',
+	'blog/post/grid',
+	'blog/post/single';

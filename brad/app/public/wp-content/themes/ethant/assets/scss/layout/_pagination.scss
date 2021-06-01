@@ -1,0 +1,115 @@
+/* ANCHOR: PAGINATION
+-------------------------------------------- */
+
+.vlt-pagination {
+	display: block;
+	text-align: center;
+	margin-top: px2rem(50px);
+}
+
+/* PAGED
+-------------------------------------------- */
+
+.vlt-pagination--paged {
+	display: flex;
+	justify-content: space-between;
+
+	.prev,
+	.next {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: px2rem(40px);
+		padding: 0 px2rem(20px);
+		margin: 0;
+		color: map-get($colors, 'c0');
+		border-radius: px2rem(4px);
+		background-color: map-get($colors, 'c10');
+
+		&:hover {
+			color: map-get($colors, '0');
+			text-decoration: none;
+			background-color: map-get($colors, 'p2');
+		}
+
+	}
+
+}
+
+/* NUMERIC
+-------------------------------------------- */
+
+.vlt-pagination--numeric {
+
+	ul {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+
+	li {
+		float: left;
+	}
+
+	li > a,
+	li > span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: px2rem(40px);
+		width: px2rem(40px);
+		margin: 0 px2rem(4px);
+		color: map-get($colors, 'c0');
+		border-radius: px2rem(4px);
+		background-color: map-get($colors, 'c10');
+
+		&.next,
+		&.prev {
+			width: auto;
+			padding: 0 px2rem(20px);
+		}
+
+		&.current,
+		&:hover {
+			color: map-get($colors, '0');
+			text-decoration: none;
+			background-color: map-get($colors, 'p2');
+		}
+
+	}
+
+}
+
+/* LOAD MORE
+-------------------------------------------- */
+
+.vlt-pagination--load-more {
+
+	a {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: px2rem(160px);
+		width: px2rem(160px);
+		font-size: px2rem(map-get($scales, 's8'));
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		color: map-get($colors, 'c7');
+		text-decoration: none;
+		border: 1px solid map-get($colors, 'c17');
+		border-radius: 50%;
+
+		&.disabled {
+			cursor: default;
+			pointer-events: none;
+		}
+
+		.vlt-is--dark-scheme & {
+			color: map-get($colors, 'c0');
+		}
+
+	}
+
+}

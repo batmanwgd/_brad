@@ -1,0 +1,21 @@
+/* ANCHOR: LINK PAGES
+-------------------------------------------- */
+
+.vlt-link-pages {
+	margin-top: px2rem(40px);
+
+	h5 {
+		margin: 0 0 px2rem(15px);
+	}
+
+	.sep {
+		margin: 0 px2rem(12px);
+		color: map-get($colors, 'c14');
+
+		.vlt-is--dark-scheme & {
+			color: map-get($colors, 'c12');
+		}
+
+	}
+
+}

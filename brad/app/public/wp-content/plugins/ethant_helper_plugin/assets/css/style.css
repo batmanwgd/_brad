@@ -1,0 +1,218 @@
+/*
+General
+ */
+
+.vlt-dashboard .wp-badge {
+	padding: 0;
+	background: none;
+	box-shadow: none;
+	height: 140px;
+	width: 140px;
+	background-size: contain;
+	background-position: center center;
+	background-image: url(../img/dashboard.png);
+}
+
+.vlt-dashboard mark {
+	background-color: transparent;
+}
+
+.vlt-dashboard mark.true {
+	color: #46b450;
+}
+.vlt-dashboard mark.false {
+	color: #dc3232;
+}
+
+.vlt-dashboard .vlt-dashboard-widget--title-badge.false {
+	background-color: #dc3232;
+	color: #ffffff;
+}
+
+.vlt-dashboard .vlt-dashboard-widget--title-badge.true {
+	background-color: #46b450;
+	color: #ffffff;
+}
+
+.vlt-dashboard .vlt-dashboard-widget--title-badge {
+	background-color: #00a0d2;
+	color: #ffffff;
+}
+
+.vlt-dashboard p.small{
+	font-size: 80%;
+	margin: 30px 0;
+	color: #aaaaaa;
+}
+
+.vlt-dashboard p.small:last-child{
+	margin-bottom: 0;
+}
+
+.vlt-dashboard .button-help{
+	color: #ffffff !important;
+	border-color: #46b450 !important;
+	background: #46b450 !important;
+	-webkit-box-shadow: 0 1px 0 #46b450 !important;
+	box-shadow: 0 1px 0 #46b450 !important;
+}
+
+.vlt-dashboard .button-help:focus,
+.vlt-dashboard .button-help:hover,
+.vlt-dashboard .button-help.focus,
+.vlt-dashboard .button-help.hover{
+	background: #46b450 !important;
+	border-color: #46b450 !important;
+	color: #ffffff !important;
+}
+
+.vlt-drop-content{
+	display: none;
+}
+
+.vlt-drop-tether.drop-element.drop-theme-arrows-bounce-dark {
+	max-width: 220px;
+}
+
+.vlt-drop-tether.drop-element.drop-theme-arrows-bounce-dark .drop-content {
+	font-size: 12px;
+	padding: 20px;
+}
+
+.vlt-drop-tether.drop-element.drop-theme-arrows-bounce-dark .drop-content a {
+	color: rgba(255,255,255,.6);
+}
+
+.vlt-drop-tether.drop-element.drop-theme-arrows-bounce-dark .drop-content a:hover{
+	color: #ffffff;
+}
+
+/*
+Widget
+*/
+
+.vlt-dashboard .vlt-panels{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	margin: 50px 0 0;
+	padding: 0;
+}
+
+@media (max-width: 767px) {
+	.vlt-dashboard .vlt-panels{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.vlt-dashboard .vlt-dashboard-widget{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.vlt-dashboard .vlt-dashboard-widget--title {
+	position: relative;
+	background-color: #fbfbfb;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 15px 20px;
+	border: 1px solid #ebebeb;
+	border-bottom: none;
+}
+
+.vlt-dashboard .vlt-dashboard-widget--content{
+	padding: 20px;
+	background-color: #ffffff;
+	border: 1px solid #ebebeb;
+}
+
+.vlt-dashboard .vlt-dashboard-widget--title-badge {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	font-size: 12px;
+	font-weight: 400;
+	padding: 4px 12px;
+	border-radius: 3px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+
+@media only screen and (min-width: 700px) {
+	.vlt-dashboard .vlt-panels {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.vlt-dashboard .vlt-panels {
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+	}
+}
+
+
+/*
+Widget Requiremenets
+*/
+
+.vlt-dashboard .vlt-widget-requirements table {
+	margin: 0;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.vlt-dashboard .vlt-widget-requirements table td {
+	padding: 10px 0;
+}
+
+.vlt-dashboard .vlt-widget-requirements table th,
+.vlt-dashboard .vlt-widget-requirements table td:first-child {
+	font-weight: 700;
+	padding: 10px 10px 10px 0;
+}
+
+/*
+Widget Demoimport
+*/
+
+.vlt-dashboard .vlt-widget-demoimport p{
+	margin-top: 0;
+}
+
+.vlt-dashboard .vlt-widget-demoimport p.small{
+	margin-top: 20px;
+}
+
+/*
+Widget Help
+*/
+
+.vlt-dashboard .vlt-widget-support p{
+	margin-top: 0;
+}
+
+.vlt-dashboard .vlt-widget-support p.small{
+	margin-top: 20px;
+}
+
+/*
+Footer
+*/
+
+.vlt-dashboard .vlt-thank-you{
+	margin: 30px 0;
+	color: #aaaaaa;
+}

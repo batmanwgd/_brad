@@ -1,0 +1,41 @@
+/* ANCHOR: WORKS CAROUSEL
+-------------------------------------------- */
+
+.vlt-works-carousel {
+
+	.owl-dots {
+		margin-top: px2rem(100px);
+
+		@include mq('medium') {
+			margin-top: px2rem(25px);
+		}
+
+	}
+
+}
+
+.vlt-work-item {
+
+	br {
+		display: none;
+	}
+
+	.vlt-work-thumbnail + .vlt-work-content {
+		padding-top: px2rem(28px);
+	}
+
+	.vlt-work-content {
+
+		.vlt-work-title {
+			@extend .vlt-post-title;
+			font-size: px2rem(map-get($scales, 's6'));
+		}
+
+		.vlt-work-meta {
+			@extend .vlt-post-meta;
+			margin-top: px2rem(10px);
+		}
+
+	}
+
+}

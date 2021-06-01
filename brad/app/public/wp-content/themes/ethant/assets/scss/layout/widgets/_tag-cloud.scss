@@ -1,0 +1,29 @@
+/* ANCHOR: TAG CLOUD
+-------------------------------------------- */
+
+.vlt-widget.widget_tag_cloud {
+
+	a {
+		display: inline-flex;
+		padding: px2rem(4px) px2rem(10px);
+		margin: 0 px2rem(4px) px2rem(4px);
+		font-size: px2rem(map-get($scales, 's11'));
+		text-transform: uppercase;
+		color: map-get($colors, 'c8');
+		border-radius: px2rem(4px);
+		border: 1px solid map-get($colors, 'c4');
+
+		.vlt-is--dark-scheme & {
+			color: map-get($colors, 'c11');
+			border-color: map-get($colors, 'c11');
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: map-get($colors, 'p1');
+			border-color: map-get($colors, 'p1');
+		}
+
+	}
+
+}

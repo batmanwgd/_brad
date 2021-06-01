@@ -1,0 +1,34 @@
+/* ANCHOR: AWARD ITEM
+-------------------------------------------- */
+
+.vlt-award-item {
+	display: flex;
+	align-items: center;
+
+	.image {
+		flex-shrink: 0;
+		width: px2rem(170px);
+		padding-right: px2rem(30px);
+		text-align: center;
+	}
+
+	.metas {
+		flex-basis: 100%;
+	}
+
+	&__title {
+		margin: 0 0 3px;
+		font-size: px2rem(map-get($scales, 's8'));
+		text-transform: uppercase;
+	}
+
+	&__description {
+		font-size: px2rem(map-get($scales, 's10'));
+
+		.vlt-is--dark-scheme & {
+			color: map-get($colors, 'c11');
+		}
+
+	}
+
+}

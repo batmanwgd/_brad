@@ -1,0 +1,24 @@
+/* ANCHOR: POST THUMBNAIL
+-------------------------------------------- */
+
+.vlt-post-thumbnail {
+	position: relative;
+	width: 100%;
+	border-radius: px2rem(10px);
+	overflow: hidden;
+
+	&__link {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+}

@@ -1,0 +1,21 @@
+/* ANCHOR: PAGES
+-------------------------------------------- */
+
+.vlt-widget.widget_pages {
+	line-height: 2.2;
+
+	.sf-with-ul::after {
+		content: '+';
+		padding-left: px2rem(5px);
+	}
+
+	.sfHover > .sf-with-ul::after {
+		content: '-';
+	}
+
+	ul.sub-menu {
+		display: none;
+		padding-left: px2rem(10px);
+	}
+
+}

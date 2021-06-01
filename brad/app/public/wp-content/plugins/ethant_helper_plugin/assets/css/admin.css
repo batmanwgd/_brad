@@ -1,0 +1,6 @@
+/* Elementor */
+
+.is-not-activated .elementor-panel-category-vlthemes-elements .elementor-element {
+	pointer-events: none;
+	opacity: .5;
+}

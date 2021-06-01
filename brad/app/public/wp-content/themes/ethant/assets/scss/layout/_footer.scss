@@ -1,0 +1,173 @@
+/* ANCHOR: FOOTER
+-------------------------------------------- */
+
+.vlt-footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	width: 100%;
+	padding-bottom: px2rem(15px);
+	pointer-events: none;
+
+	@include mq('medium', min) {
+		padding-bottom: px2rem(35px);
+	}
+
+	@include mq('xlarge', min) {
+		padding-bottom: px2rem(64px);
+	}
+
+	&__ornament {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding-bottom: 14%;
+	}
+
+	&__right {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: inherit;
+
+		@include mq('small') {
+			display: none;
+		}
+
+		> * {
+			transform: translateX(10px);
+		}
+
+	}
+
+	&--fixed {
+		position: fixed;
+		z-index: z('fixed-footer');
+
+		@media (max-height: 559px) {
+			display: none;
+		}
+
+	}
+
+}
+
+/* FOOTER COPYRIGHT
+-------------------------------------------- */
+
+.vlt-footer-copyright {
+	font-size: px2rem(map-get($scales, 's10'));
+	color: map-get($colors, 'c3');
+	pointer-events: auto;
+
+	.vlt-is--dark-scheme & {
+		color: map-get($colors, 'c0');
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+}
+
+/* CONTACT FORM TRIGGER
+-------------------------------------------- */
+
+.vlt-footer-form-trigger {
+	position: relative;
+	margin-top: px2rem(125px);
+	pointer-events: auto;
+
+	span {
+		position: absolute;
+		right: 50%;
+		bottom: 100%;
+		margin-bottom: px2rem(5px);
+		font-size: px2rem(map-get($scales, 's10'));
+		color: map-get($colors, 'c3');
+		white-space: nowrap;
+		transform: rotate(90deg);
+		transform-origin: right center;
+
+		.vlt-is--dark-scheme & {
+			color: map-get($colors, 'c0');
+		}
+
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		width: px2rem(46px);
+		height: px2rem(46px);
+		font-size: px2rem(map-get($scales, 's5'));
+		color: map-get($colors, 'c0');
+		text-decoration: none;
+		border-radius: px2rem(46px);
+		background-color: map-get($colors, 'c6');
+
+		.vlt-is--dark-scheme & {
+			background-color: map-get($colors, 'c18');
+		}
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: -3px;
+			right: -2px;
+			width: px2rem(map-get($scales, 's9'));
+			height: px2rem(map-get($scales, 's9'));
+			border-radius: px2rem(map-get($scales, 's9'));
+			background-color: map-get($colors, 'c13');
+			border: 3px solid map-get($colors, 'c0');
+		}
+
+	}
+
+}
+
+/* FOOTER SOCIALS
+-------------------------------------------- */
+
+.vlt-footer-socials {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: px2rem(map-get($scales, 's8'));
+	color: map-get($colors, 'c2');
+	line-height: 1;
+	pointer-events: auto;
+
+	.vlt-is--dark-scheme & {
+		color: map-get($colors, 'c11');
+	}
+
+	li {
+		display: block;
+
+		a {
+			display: inline-block;
+			width: 1em;
+			text-align: center;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+		}
+
+	}
+
+	li + li {
+		margin-top: px2rem(15px);
+	}
+
+}

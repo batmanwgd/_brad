@@ -1,0 +1,81 @@
+// VARIABLES
+$smooth_font: true;
+$base_font_size: 16px;
+
+// COLORS
+$colors: (
+	'c0': #ffffff,
+	'c1': #fafafa,
+	'c2': #1f2044,
+	'c3': #234969,
+	'c4': #e5e5e5,
+	'c5': #eeeeee,
+	'c6': #464989,
+	'c7': #000000,
+	'c8': #74748f,
+	'c9': #3c3c59,
+	'c10': #32324c,
+	'c11': #b4b4d5,
+	'c12': #51516d,
+	'c13': #5fc515,
+	'c14': #f5f5f5,
+	'c15': #a3a4a8,
+	'c16': #495057,
+	'c17': #ced4da,
+	'c18': #2b2b45,
+	'c19': #202044,
+	'c20': #23272b,
+	'c21': #e9ecef,
+	'c22': #122a4e,
+	'c23': #94aec4,
+	'p1': var(--p1),
+	'p2': var(--p2),
+	'p3': var(--p3),
+	'p4': var(--p4)
+);
+
+// FONTS
+$fonts: (
+	'pf': var(--pf),
+	'sf': var(--sf),
+	'li': 'linearicons',
+	'si': 'Socicons'
+);
+
+// SCALES
+$scales: (
+	's0': 50px,
+	's1': 44px,
+	's2': 40px,
+	's3': 32px,
+	's4': 28px,
+	's5': 24px,
+	's6': 22px,
+	's7': 20px,
+	's8': 18px,
+	's9': 16px,
+	's10': 14px,
+	's11': 12px
+);
+
+// BREAKPOINTS
+$breakpoints: (
+	'small': 576px,
+	'medium': 768px,
+	'large': 992px,
+	'xlarge': 1200px,
+	'xxlarge': 1280px,
+	'xxxlarge': 1600px
+);
+
+// Z-INDEXES
+$z-indexes: (
+	'default': 1,
+	'fixed-footer': 20,
+	'fullpage-slider-nav': 25,
+	'header': 30,
+	'navbar-overlay': 35,
+	'menu-aside': 40,
+	'navbar': 50,
+	'preloader-spinner': 120,
+);

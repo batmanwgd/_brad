@@ -1,0 +1,37 @@
+/* ANCHOR: VACANCY ITEM
+-------------------------------------------- */
+
+.vlt-vacancy-item {
+
+	&__title {
+		margin: 0 0 px2rem(10px);
+		font-size: px2rem(map-get($scales, 's8'));
+		font-weight: 700;
+		text-transform: uppercase;
+
+		a {
+			color: inherit;
+		}
+
+	}
+
+	&__place,
+	&__time {
+		line-height: 1.625;
+	}
+
+	&__place {
+		font-weight: 600;
+	}
+
+	&__time {
+		color: map-get($colors, 'p1');
+	}
+
+	&__description {
+		margin: px2rem(10px) 0 0;
+		font-size: px2rem(map-get($scales, 's10'));
+		line-height: 1.7;
+	}
+
+}

@@ -1,0 +1,240 @@
+/* ANCHOR: SINGLE POST
+-------------------------------------------- */
+
+.vlt-post--style-single {
+
+	.vlt-post-header {
+		text-align: center;
+
+		.vlt-post-category {
+			font-weight: 600;
+			font-size: px2rem(map-get($scales, 's10'));
+			text-transform: uppercase;
+			color: map-get($colors, 'p1');
+			letter-spacing: .06em;
+		}
+
+		.vlt-post-title {
+			margin: px2rem(20px) 0 px2rem(70px);
+			font-size: px2rem(map-get($scales, 's1'));
+		}
+
+		.vlt-post-meta {
+			margin-bottom: px2rem(70px);
+			font-size: px2rem(map-get($scales, 's8'));
+			font-weight: 600;
+			text-transform: none;
+			color: map-get($colors, 'c3');
+
+			.vlt-is--dark-scheme & {
+				color: map-get($colors, 'c0');
+			}
+
+			.col-sm-4 + .col-sm-4 {
+
+				@include mq('small') {
+					margin-top: px2rem(30px);
+				}
+
+			}
+
+			h6 {
+				margin: 0 0 px2rem(5px);
+				color: map-get($colors, 'c23');
+				font-size: px2rem(map-get($scales, 's11'));
+				font-weight: normal;
+
+				.vlt-is--dark-scheme & {
+					color: map-get($colors, 'c11');
+				}
+
+			}
+
+		}
+
+	}
+
+	.vlt-post-thumbnail {
+		margin-bottom: px2rem(100px);
+		width: auto;
+
+		@include mq('medium', min) {
+			margin-left: calc(-25% - 7.5px);
+			margin-right: calc(-25% - 7.5px);
+			max-width: 1200px;
+		}
+
+	}
+
+	.vlt-post-content {
+
+		.excerpt {
+			margin-bottom: px2rem(60px);
+			font-family: map-get($fonts, 'pf');
+			font-style: italic;
+			font-size: px2rem(map-get($scales, 's5'));
+			letter-spacing: -.01em;
+			color: map-get($colors, 'c23');
+
+			.vlt-is--dark-scheme & {
+				color: map-get($colors, 'c11');
+			}
+
+		}
+
+	}
+
+	.vlt-post-footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: px2rem(70px);
+		padding-bottom: px2rem(70px);
+
+		@include mq('medium') {
+			display: block;
+		}
+
+		.vlt-post-tags {
+			@extend .vlt-widget.widget_tag_cloud;
+			margin-left: px2rem(-4px);
+		}
+
+		.vlt-social-share {
+			display: flex;
+			align-items: center;
+			font-size: px2rem(map-get($scales, 's9'));
+			line-height: 1;
+			color: map-get($colors, 'c0');
+
+			@include mq('medium') {
+				margin-top: px2rem(30px);
+			}
+
+			h5 {
+				margin: 0 px2rem(20px) 0 0;
+				font-size: px2rem(map-get($scales, 's10'));
+				color: map-get($colors, 'c23');
+				text-transform: uppercase;
+				font-weight: normal;
+
+				.vlt-is--dark-scheme & {
+					color: map-get($colors, 'c11');
+				}
+
+			}
+
+			a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				height: px2rem(30px);
+				width: px2rem(30px);
+				border-radius: 50%;
+
+				&.facebook {
+					background-color: #3b5999;
+				}
+
+				&.twitter {
+					background-color: #55acee;
+				}
+
+				&.pinterest {
+					background-color: #e60023;
+				}
+
+				&.linkedin {
+					background-color: #2977c9;
+				}
+
+				& + a {
+					margin-left: px2rem(8px);
+				}
+
+				&:hover {
+					text-decoration: none;
+					color: inherit;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+// about author
+.vlt-about-author {
+	display: flex;
+	padding: px2rem(50px) 0;
+	border-top: 1px solid map-get($colors, 'c14');
+
+	.vlt-is--dark-scheme & {
+		border-color: map-get($colors, 'c12');
+	}
+
+	&__avatar {
+		flex-shrink: 0;
+		margin-right: px2rem(30px);
+
+		img {
+			border-radius: 50%;
+		}
+
+	}
+
+	&__content {
+		flex-basis: 100%;
+
+		p {
+			margin-top: px2rem(20px);
+		}
+
+	}
+
+	&__name {
+		margin: 0;
+	}
+
+	&__role {
+		margin-top: px2rem(2px);
+		font-size: px2rem(map-get($scales, 's10'));
+		text-transform: uppercase;
+		color: map-get($colors, 'c23');
+		letter-spacing: .025em;
+
+		.vlt-is--dark-scheme & {
+			color: map-get($colors, 'c11');
+		}
+
+	}
+
+}
+
+// post navigation
+.vlt-post-navigation {
+	padding: px2rem(140px) 0;
+	text-align: center;
+	border-top: 1px solid map-get($colors, 'c14');
+
+	.vlt-is--dark-scheme & {
+		border-color: map-get($colors, 'c12');
+	}
+
+	span {
+		display: block;
+		margin-bottom: px2rem(30px);
+		font-weight: 600;
+		text-transform: uppercase;
+		color: map-get($colors, 'p1');
+		letter-spacing: .06em;
+		font-size: px2rem(map-get($scales, 's10'));
+	}
+
+	h3 {
+		margin: 0;
+	}
+
+}

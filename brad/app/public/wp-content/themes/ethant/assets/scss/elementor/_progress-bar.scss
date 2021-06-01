@@ -1,0 +1,47 @@
+/* ANCHOR: PROGRESS BAR
+-------------------------------------------- */
+
+.vlt-progress-bar {
+
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 0 px2rem(11px);
+		font-size: px2rem(map-get($scales, 's9'));
+
+		> span {
+			font-size: px2rem(map-get($scales, 's10'));
+			font-weight: normal;
+		}
+
+	}
+
+	&__bar {
+		width: 100%;
+		height: px2rem(14px);
+		background-color: map-get($colors, 'c21');
+		border-radius: px2rem(14px);
+		overflow: hidden;
+
+		.track {
+			height: 100%;
+			width: 0;
+			transition: width 1000ms ease-in-out;
+			transition-delay: 1500ms;
+			overflow: hidden;
+
+			.elementor-editor-active & {
+				width: 100%;
+			}
+
+		}
+
+		.bar {
+			height: 100%;
+			background-color: map-get($colors, 'p2');
+		}
+
+	}
+
+}

@@ -1,0 +1,24 @@
+/* ANCHOR: SEARCH FORM
+-------------------------------------------- */
+
+.vlt-search-form {
+	position: relative;
+	display: flex;
+
+	input[type="text"] {
+		flex-basis: 100%;
+		border-right: none;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	button {
+		flex-shrink: 0;
+		padding-left: px2rem(30px);
+		padding-right: px2rem(30px);
+		border-radius: 0;
+		border-top-right-radius: px2rem(4px);
+		border-bottom-right-radius: px2rem(4px);
+	}
+
+}

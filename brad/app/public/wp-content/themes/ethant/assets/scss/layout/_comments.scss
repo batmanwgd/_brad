@@ -1,0 +1,160 @@
+/* ANCHOR: COMMENTS
+-------------------------------------------- */
+
+.vlt-comments-wrap {
+	padding-top: px2rem(70px);
+	border-top: 1px solid map-get($colors, 'c14');
+
+	.vlt-is--dark-scheme & {
+		border-color: map-get($colors, 'c12');
+	}
+
+}
+
+.vlt-comments__title,
+.vlt-comment-form__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 px2rem(55px);
+	font-size: px2rem(map-get($scales, 's5'));
+}
+
+#cancel-comment-reply-link {
+	margin-left: px2rem(30px);
+	text-decoration: none;
+	font-size: 80%;
+}
+
+.vlt-comments + .vlt-comment-form {
+	margin-top: px2rem(80px);
+}
+
+p.form-submit {
+	margin-bottom: 0;
+}
+
+// comments list
+.vlt-comments__list,
+.vlt-comments__list ul.children {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	li.vlt-comment-item {
+		padding: px2rem(20px) 0;
+
+		&:first-child {
+			padding-top: 0;
+		}
+
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+	}
+
+}
+
+.vlt-comments__list ul.children {
+	margin-top: px2rem(40px);
+	padding-left: px2rem(20px);
+
+	li.vlt-comment-item:last-child {
+		padding-bottom: 0;
+	}
+
+	@include mq('medium') {
+		padding-left: 0;
+	}
+
+}
+
+.vlt-comments__list .comment-respond {
+	margin: px2rem(40px) 0 0;
+}
+
+// comment item
+.vlt-comment-item__inner {
+	display: flex;
+
+	.vlt-comment-avatar {
+		display: block;
+		flex-shrink: 0;
+		margin-right: px2rem(30px);
+
+		@include mq('medium') {
+			display: none;
+		}
+
+		img {
+			display: block;
+			border-radius: 50%;
+		}
+
+	}
+
+	.vlt-comment-content {
+		width: 100%;
+
+		.vlt-comment-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: px2rem(10px);
+
+			h5 {
+				margin: 0;
+				font-weight: 600;
+				font-size: px2rem(map-get($scales, 's8'));
+			}
+
+			span {
+				font-size: px2rem(map-get($scales, 's10'));
+				color: map-get($colors, 'c23');
+				text-transform: uppercase;
+
+				.vlt-is--dark-scheme & {
+					color: map-get($colors, 'c11');
+				}
+
+			}
+
+		}
+
+		.comment-reply-link {
+			display: inline-block;
+			margin-top: px2rem(15px);
+			padding: px2rem(4px) px2rem(10px);
+			font-size: px2rem(map-get($scales, 's11'));
+			text-transform: uppercase;
+			color: map-get($colors, 'c2');
+			border-radius: px2rem(4px);
+			border: 1px solid map-get($colors, 'c4');
+
+			.vlt-is--dark-scheme & {
+				color: map-get($colors, 'c11');
+				border-color: map-get($colors, 'c11');
+			}
+
+			&:hover {
+				color: map-get($colors, 'p1');
+				text-decoration: none;
+				border-color: map-get($colors, 'p1');
+			}
+
+		}
+
+	}
+
+}
+
+// comment navigation
+.vlt-comments-navigation {
+	margin-top: px2rem(30px);
+
+	a + a {
+		margin-left: px2rem(30px);
+	}
+
+}

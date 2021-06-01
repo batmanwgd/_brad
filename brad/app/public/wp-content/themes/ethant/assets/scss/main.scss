@@ -1,0 +1,77 @@
+/* Master Stylesheet
+ * Version: 1.0
+ *
+ * Powered by VLThemes
+ *
+ * 01. Helpers
+ * 02. Base
+ * 03. Layout
+ * 04. Pages
+ * 05. Partials
+ * 06. Vendors
+ * 07. Elementor
+ */
+
+/* 01. Helpers */
+
+@import
+	'abstracts/variables',
+	'abstracts/functions',
+	'abstracts/mixins',
+	'abstracts/keyframes',
+	'abstracts/snippets';
+
+/* 02. Base */
+
+@import
+	'base/helper-classes',
+	'base/gutenberg',
+	'base/typography';
+
+/* 03. Layout */
+
+@import
+	'layout/grid',
+	'layout/pagination',
+	'layout/comments',
+	'layout/footer',
+	'layout/header',
+	'layout/sidebar';
+
+/* 04. Pages */
+
+@import
+	'pages/404',
+	'pages/blog',
+	'pages/fullpage-slider',
+	'pages/empty';
+
+/* 05. Partials */
+
+@import
+	'partials/link-pages',
+	'partials/page-title',
+	'partials/password-form',
+	'partials/site-preloader';
+
+/* 06. Vendors */
+
+@import
+	'vendors/bootstrap',
+	'vendors/masonry',
+	'vendors/piling',
+	'vendors/owl-carousel';
+
+/* 07. Elementor */
+
+@import
+	'elementor/award-item',
+	'elementor/button',
+	'elementor/contact-form-7',
+	'elementor/counter-item',
+	'elementor/progress-bar',
+	'elementor/slide-photo',
+	'elementor/testimonial-slider',
+	'elementor/text-editor',
+	'elementor/vacancy-item',
+	'elementor/works-carousel';

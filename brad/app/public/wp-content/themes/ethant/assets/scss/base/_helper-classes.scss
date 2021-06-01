@@ -1,0 +1,82 @@
+.has-first-color {
+	color: map-get($colors, 'p1');
+}
+
+.has-first-background-color {
+	background-color: map-get($colors, 'p1');
+}
+
+.has-second-color {
+	color: map-get($colors, 'p2');
+}
+
+.has-second-background-color {
+	background-color: map-get($colors, 'p2');
+}
+
+.has-third-color {
+	color: map-get($colors, 'p3');
+}
+
+.has-third-background-color {
+	background-color: map-get($colors, 'p3');
+}
+
+.has-fourth-color {
+	color: map-get($colors, 'p4');
+}
+
+.has-fourth-background-color {
+	background-color: map-get($colors, 'p4');
+}
+
+.has-white-color {
+	color: map-get($colors, 'c0');
+}
+
+.has-white-background-color {
+	background-color: map-get($colors, 'c0');
+}
+
+.fadeInUpSm {
+	animation-name: vlt_fade_in_up_sm;
+}
+
+.vlt-typed-text {
+	display: inline;
+	min-height: .85em;
+	line-height: .85;
+	background-color: map-get($colors, 'p4');
+	box-shadow: map-get($colors, 'p4') 0 0 0 5px;
+}
+
+.vlt-link-effect {
+	position: relative;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		height: 3px;
+		width: 0;
+		margin-top: px2rem(4px);
+		background-color: map-get($colors, 'p1');
+		transition: all 300ms ease-in-out;
+	}
+
+	&:hover::after {
+		width: px2rem(75px);
+	}
+
+}
+
+.has-animated .vlt-animate-element {
+	animation-duration: 700ms;
+	animation-fill-mode: both;
+}

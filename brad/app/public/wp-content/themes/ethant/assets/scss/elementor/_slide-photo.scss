@@ -1,0 +1,36 @@
+/* ANCHOR: SLIDE PHOTO
+-------------------------------------------- */
+
+.vlt-slide-photo {
+	position: relative;
+	z-index: 1;
+
+	&__inside {
+		display: inline-block;
+	}
+
+	&__card {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: auto;
+		border-radius: px2rem(18px);
+		box-shadow: rgba(map-get($colors, 'c22'), .15) px2rem(60px) px2rem(60px) px2rem(60px);
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		&--negative-z-index {
+			z-index: -1;
+		}
+
+		&--spinned {
+			animation: vlt_spin 15s linear infinite forwards;
+		}
+
+	}
+
+}

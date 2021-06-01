@@ -1,0 +1,46 @@
+/* ANCHOR: CONTACT FORM 7
+-------------------------------------------- */
+
+.wpcf7 {
+
+	p {
+		margin-bottom: 0;
+	}
+
+	br {
+		display: none;
+	}
+
+	.wpcf7-form-control-wrap {
+		display: block;
+	}
+
+	.wpcf7-list-item {
+		margin: 0;
+	}
+
+	.wpcf7-not-valid-tip {
+		margin: 0;
+		padding: 0;
+	}
+
+	.wpcf7-not-valid-tip {
+		margin-top: px2rem(10px);
+		font-size: px2rem(map-get($scales, 's10'));
+	}
+
+	.wpcf7-response-output {
+		position: relative;
+		margin: px2rem(25px) 0 0;
+		padding: px2rem(12px) px2rem(15px);
+		color: map-get($colors, 'c0');
+		font-size: px2rem(map-get($scales, 's10'));
+		border: none;
+		background-color: map-get($colors, 'p1');
+	}
+
+	span.ajax-loader {
+		display: none !important;
+	}
+
+}

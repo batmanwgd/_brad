@@ -1,0 +1,45 @@
+/* Gutenberg Editor Stylesheet
+ * Version: 1.0
+ *
+ * Powered by VLThemes
+ */
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+.editor-styles-wrapper {
+	font-size: $base_font_size;
+
+	@include mq('medium', min) {
+		font-size: $base_font_size + 1px;
+	}
+
+	@include mq('large', min) {
+		font-size: $base_font_size + 2px;
+	}
+
+}
+
+// block
+
+.wp-block {
+	max-width: 1140px;
+}
+
+// links
+
+.editor-styles-wrapper a {
+	color: map-get($colors, 'p1');
+}
+
+// preformatted
+
+.wp-block-code,
+.wp-block-preformatted pre,
+.wp-block-verse pre,
+pre.wp-block-verse {
+	padding: 35px;
+	font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+	color: map-get($colors, 'c1');
+	background-color: map-get($colors, 'c12');
+}
